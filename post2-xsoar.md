@@ -1,6 +1,6 @@
 ## Installing Cortex XSOAR
 
-Below are some notes I took while installing PANW Cortex XSOAR community edition (version 6.2-1321594) on Ubuntu 18.04 server:
+Below are some notes I took while installing PANW Cortex XSOAR community edition (version 6.2-1321594) on Ubuntu 18.04 server. The official installation instructions are [here](https://docs.paloaltonetworks.com/cortex/cortex-xsoar/6-2/cortex-xsoar-admin/installation/install-demisto-on-a-physical-or-virtual-server.html) but it does not provide details on importing the GPG public key:
 - Do not install docker snap packages while installing Ubuntu. The Demisto installation process will install docker as well
 - You need to get the "InRelease" GPG docker public key as follows:
 
