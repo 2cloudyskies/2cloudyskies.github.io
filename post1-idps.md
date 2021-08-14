@@ -13,7 +13,7 @@ In this post, I'm documenting how you can enable logging when NSX-T distributed 
   
 ![get-idps](https://2cloudyskies.github.io/get-idps.png)
   
-**Step 3** - Issue PUT RESTful API call to the same URL above to set "global_idsevents_to_syslog_enabled" to true and make sure you use the same revision number. Use JSON for the body of the POST message.
+**Step 3** - Issue PUT RESTful API call to the same URL above to set **"global_idsevents_to_syslog_enabled"** to true and make sure you use the <u>same revision number</u>. Use JSON for the body of the POST message.
 
 ![post-idps](https://2cloudyskies.github.io/post-idps.png)
 
