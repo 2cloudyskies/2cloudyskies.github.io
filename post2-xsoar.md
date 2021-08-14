@@ -24,5 +24,6 @@ echo \
 apt-get update
 </code></pre>
 
+
 3. Note that we use "InRelease" because that is what the Demisto installer uses
 4. When you run "apt-get update" you may get error messages about some packages missing, just ignore those
