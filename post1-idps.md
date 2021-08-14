@@ -4,12 +4,12 @@ In this post, I'm documenting how you can enable logging when NSX-T distributed 
 
 **Step 1** - first enable logging for the specific distributed IDPS rule in NSX-T manager via NSX-T manager web interface
 
-<img src="https://2cloudyskies.github.io/idps-log-ui1.png" width=1400>
+![idps-log-ui1](https://2cloudyskies.github.io/idps-log-ui1.png)
 
 ![idps-log-ui2](https://2cloudyskies.github.io/idps-log-ui2.png)
 
 
-**Step 2** - Issue GET RESTful API call to NSX-T manager at the url https://nsx-manager-fqdn/api/v1/global-configs/IdsGlobalConfig . Note that "global_idsevents_to_syslog_enabled" will be initially set to false. Also take note of the revision number
+**Step 2** - Issue GET RESTful API call to NSX-T manager at the url <em>https://nsx-manager-fqdn/api/v1/global-configs/IdsGlobalConfig</em> . Note that **"global_idsevents_to_syslog_enabled"** will be initially set to false. Also take note of the revision number
   
 ![get-idps](https://2cloudyskies.github.io/get-idps.png)
   
