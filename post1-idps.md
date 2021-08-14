@@ -4,7 +4,7 @@ In this post, I'm documenting how you can enable logging when NSX-T distributed 
 
 **Step 1** - first enable logging for the specific distributed IDPS rule in NSX-T manager via NSX-T manager web interface
 
-<img src="https://2cloudyskies.github.io/idps-log-ui1.png" width=800>
+<img src="https://2cloudyskies.github.io/idps-log-ui1.png" width=1200>
 
 ![idps-log-ui2](https://2cloudyskies.github.io/idps-log-ui2.png)
 
