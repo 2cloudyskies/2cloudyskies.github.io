@@ -1,37 +1,5 @@
-## Welcome to GitHub Pages
+# Enabling logging on NSX-T distributed IDPS
+In this post, I'll show you how you can enable logging with NSX-T distributed IDPS. Logging IDPS events is useful when it comes to troubleshooting
 
-You can use the [editor on GitHub](https://github.com/2cloudyskies/2cloudyskies.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/2cloudyskies/2cloudyskies.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+# Installing Palo Alto Cortex XSOAR
+I recently had the chance to install Palo Alto Cortex XSOAR and thought I'll document it here for reference
