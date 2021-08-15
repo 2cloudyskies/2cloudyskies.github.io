@@ -30,3 +30,22 @@ gjUTkbxxZ1QgsTqn0zHIXebyCHwNvt3HBDSpC2r3cU0nTif0clpiVoMwpt8N9oC1
 WynfeppuCtOegCOEpp5oHx3BTitWKfJhfuRg5V/waztsmKZNP0jmL7b1qR9fTBdp
 Y6goLDKnnvtEk+9UDdib0J5XkYSIIfg=
 -----END CERTIFICATE-----`
+
+Copy out the text above into another file kubernetes-admin.crt and then use openssl to decode it into certificate data that is human readable. The below output is truncated for brevity
+
+
+`Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 2708937826177294654 (0x25981499afeaa13e)
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: CN = kubernetes
+        Validity
+            Not Before: Jun 20 07:31:49 2021 GMT
+            Not After : Jun 20 07:31:52 2022 GMT
+        Subject: O = system:masters, CN = kubernetes-admin
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (2048 bit)`
+                
+
