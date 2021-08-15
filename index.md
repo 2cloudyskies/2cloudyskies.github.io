@@ -6,3 +6,6 @@ I recently had the chance to install Palo Alto Cortex XSOAR and thought I'll doc
 
 # Using kubectl proxy
 Some notes on using [kubectl proxy](post3-kubectlproxy.md)
+
+# Decoding certificates in K8S
+[Notes](post4-k8scert.md) on viewing certificates in K8S
