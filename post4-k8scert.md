@@ -2,15 +2,15 @@
 
 The certificate data and key in kube config file is in base64 encoded format. To view the actual certificate contents in human readable format,
 
-`cat .kube/config`
+<pre><code>cat .kube/config`</code></pre>
 
 Copy out the base64 encoded certificate data and save in a text file as kubernetes-admin.pem
 
-`vagrant@master-node:~$ cat kubernetes-admin.pem
-LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURFekNDQWZ1Z0F3SUJBZ0lJSlpnVW1hL3FvVDR3RFFZSktvWklodmNOQVFFTEJRQXdGVEVUTUJFR0ExVUUKQXhNS2EzVmlaWEp1WlhSbGN6QWVGdzB5TVRBMk1qQXdOek14TkRsYUZ3MHlNakEyTWpBd056TXhOVEphTURReApGekFWQmdOVkJBb1REbk41YzNSbGJUcHRZWE4wWlhKek1Sa3dGd1lEVlFRREV4QnJkV0psY201bGRHVnpMV0ZrCmJXbHVNSUlCSWpBTkJna3Foa2lHOXcwQkFRRUZBQU9DQVE4QU1JSUJDZ0tDQVFFQW9NS1ZIaE5jcXVsaTFrRXkKUlNKRWoyMU01clg3SnplSzJZVERyd3VNcEQvcEl0L0JvOS9aK1VjZ1Z6ZEUwbDVJZHlBTFhnY2EzcXdqT0NPZgpZK2hLbFRMUzN6L1J4Q2E3cVM4SFFadVNTeElGVFVlS2toWVRFWGFYUnJ3RVg0OEhrREx5c29oTzZFZHhUQXVjCjVLekVhRU9mbVEzLzBjQkg1dndwODduVTJoMFlyMWFEdFF6cGI4aThweWJsMC9sWlp2WGNtWVNQeDJSTDdPSmQKQytVY1B5TXBWQ0hUeFAxYzdzYUc3cmVhMGxUUnNuNmJyQ0ozL2NzZEI2UGRNRHFla1ZDUGovVHZFajVjYVdTUApQT1J0K2VhTFpnci9OaFZVYXBvQWE0Y3lWeWY0MFRuQVpaSm9KS2ZlQVh4UkU4bGFucXA0c1hHc0ZkeGRHRnZuClczT2ttd0lEQVFBQm8wZ3dSakFPQmdOVkhROEJBZjhFQkFNQ0JhQXdFd1lEVlIwbEJBd3dDZ1lJS3dZQkJRVUgKQXdJd0h3WURWUjBqQkJnd0ZvQVVrWVhiUlErNGxhV0trMklGaDJXYXdwTUlOemt3RFFZSktvWklodmNOQVFFTApCUUFEZ2dFQkFDQUNwZllTZzYvTk8xRFRyLzlyS0p0enFPL1NpZ3hPMzFobVRheFh1M1VvbUNYNEdFTURQd0NECkpIK0xYOTVqK05DQnNZbGh6RXcyc2hBVGc0a1ExSVNaYWpLVjNCK2doVFE1dTZuZ0p2dW9OdjJhT2FNd0ZaU2sKZ2pVVGtieHhaMVFnc1RxbjB6SElYZWJ5Q0h3TnZ0M0hCRFNwQzJyM2NVMG5UaWYwY2xwaVZvTXdwdDhOOW9DMQowM2tVNGQzaFpiOE1VaTRkUFZMclI4RmpaZkVOeGdzZjBVUW5lbU91T3JPdUhNWWZDMEx2cy9YdUFuQStVTzAxCld5bmZlcHB1Q3RPZWdDT0VwcDVvSHgzQlRpdFdLZkpoZnVSZzVWL3dhenRzbUtaTlAwam1MN2IxcVI5ZlRCZHAKWTZnb0xES25udnRFays5VURkaWIwSjVYa1lTSUlmZz0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=`
+<pre><code>vagrant@master-node:~$ cat kubernetes-admin.pem
+LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURFekNDQWZ1Z0F3SUJBZ0lJSlpnVW1hL3FvVDR3RFFZSktvWklodmNOQVFFTEJRQXdGVEVUTUJFR0ExVUUKQXhNS2EzVmlaWEp1WlhSbGN6QWVGdzB5TVRBMk1qQXdOek14TkRsYUZ3MHlNakEyTWpBd056TXhOVEphTURReApGekFWQmdOVkJBb1REbk41YzNSbGJUcHRZWE4wWlhKek1Sa3dGd1lEVlFRREV4QnJkV0psY201bGRHVnpMV0ZrCmJXbHVNSUlCSWpBTkJna3Foa2lHOXcwQkFRRUZBQU9DQVE4QU1JSUJDZ0tDQVFFQW9NS1ZIaE5jcXVsaTFrRXkKUlNKRWoyMU01clg3SnplSzJZVERyd3VNcEQvcEl0L0JvOS9aK1VjZ1Z6ZEUwbDVJZHlBTFhnY2EzcXdqT0NPZgpZK2hLbFRMUzN6L1J4Q2E3cVM4SFFadVNTeElGVFVlS2toWVRFWGFYUnJ3RVg0OEhrREx5c29oTzZFZHhUQXVjCjVLekVhRU9mbVEzLzBjQkg1dndwODduVTJoMFlyMWFEdFF6cGI4aThweWJsMC9sWlp2WGNtWVNQeDJSTDdPSmQKQytVY1B5TXBWQ0hUeFAxYzdzYUc3cmVhMGxUUnNuNmJyQ0ozL2NzZEI2UGRNRHFla1ZDUGovVHZFajVjYVdTUApQT1J0K2VhTFpnci9OaFZVYXBvQWE0Y3lWeWY0MFRuQVpaSm9KS2ZlQVh4UkU4bGFucXA0c1hHc0ZkeGRHRnZuClczT2ttd0lEQVFBQm8wZ3dSakFPQmdOVkhROEJBZjhFQkFNQ0JhQXdFd1lEVlIwbEJBd3dDZ1lJS3dZQkJRVUgKQXdJd0h3WURWUjBqQkJnd0ZvQVVrWVhiUlErNGxhV0trMklGaDJXYXdwTUlOemt3RFFZSktvWklodmNOQVFFTApCUUFEZ2dFQkFDQUNwZllTZzYvTk8xRFRyLzlyS0p0enFPL1NpZ3hPMzFobVRheFh1M1VvbUNYNEdFTURQd0NECkpIK0xYOTVqK05DQnNZbGh6RXcyc2hBVGc0a1ExSVNaYWpLVjNCK2doVFE1dTZuZ0p2dW9OdjJhT2FNd0ZaU2sKZ2pVVGtieHhaMVFnc1RxbjB6SElYZWJ5Q0h3TnZ0M0hCRFNwQzJyM2NVMG5UaWYwY2xwaVZvTXdwdDhOOW9DMQowM2tVNGQzaFpiOE1VaTRkUFZMclI4RmpaZkVOeGdzZjBVUW5lbU91T3JPdUhNWWZDMEx2cy9YdUFuQStVTzAxCld5bmZlcHB1Q3RPZWdDT0VwcDVvSHgzQlRpdFdLZkpoZnVSZzVWL3dhenRzbUtaTlAwam1MN2IxcVI5ZlRCZHAKWTZnb0xES25udnRFays5VURkaWIwSjVYa1lTSUlmZz0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=</code></pre>
 
 
-`vagrant@master-node:~$ cat kubernetes-admin.pem | base64 -d
+<pre><code>vagrant@master-node:~$ cat kubernetes-admin.pem | base64 -d
 -----BEGIN CERTIFICATE-----
 MIIDEzCCAfugAwIBAgIIJZgUma/qoT4wDQYJKoZIhvcNAQELBQAwFTETMBEGA1UE
 AxMKa3ViZXJuZXRlczAeFw0yMTA2MjAwNzMxNDlaFw0yMjA2MjAwNzMxNTJaMDQx
@@ -29,12 +29,14 @@ gjUTkbxxZ1QgsTqn0zHIXebyCHwNvt3HBDSpC2r3cU0nTif0clpiVoMwpt8N9oC1
 03kU4d3hZb8MUi4dPVLrR8FjZfENxgsf0UQnemOuOrOuHMYfC0Lvs/XuAnA+UO01
 WynfeppuCtOegCOEpp5oHx3BTitWKfJhfuRg5V/waztsmKZNP0jmL7b1qR9fTBdp
 Y6goLDKnnvtEk+9UDdib0J5XkYSIIfg=
------END CERTIFICATE-----`
-
-Copy out the text above into another file kubernetes-admin.crt and then use openssl to decode it into certificate data that is human readable. The below output is truncated for brevity
+-----END CERTIFICATE-----</code></pre>
 
 
-`Certificate:
+
+Copy out the text above into another file kubernetes-admin.crt and then use openssl to decode it into certificate data that is human readable
+
+
+<pre><code>Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number: 2708937826177294654 (0x25981499afeaa13e)
@@ -46,6 +48,5 @@ Copy out the text above into another file kubernetes-admin.crt and then use open
         Subject: O = system:masters, CN = kubernetes-admin
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-                RSA Public-Key: (2048 bit)`
+                RSA Public-Key: (2048 bit)</code></pre>
                 
-
