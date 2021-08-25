@@ -53,5 +53,7 @@ Certificate:
         Subject: O = system:masters, CN = kubernetes-admin
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-                RSA Public-Key: (2048 bit)</code></pre>
+                RSA Public-Key: (2048 bit)
+<<< output truncated >>>                
+</code></pre>
                 
