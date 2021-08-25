@@ -38,7 +38,10 @@ Y6goLDKnnvtEk+9UDdib0J5XkYSIIfg=
 Copy out the text above into another file kubernetes-admin.crt and then use openssl to decode it into certificate data that is human readable. The below output has been truncated for brevity.
 
 
-<pre><code>Certificate:
+<pre><code>
+openssl x509 -in kubernetes-admin.crt -noout -text
+
+Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number: 2708937826177294654 (0x25981499afeaa13e)
