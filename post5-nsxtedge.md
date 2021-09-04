@@ -1,4 +1,4 @@
-## How to view gateway firewall logs in NSX-T Edge
+## How to view gateway firewall logs and session in NSX-T Edge
 
 NSX-T Edge nodes are capable of performing stateful firewalling for uplink interfaces or centralized service ports, and this can be done on T0 or T1 routers realized on the edge nodes. The main use case is to control zone to zone traffic or to carry out additional functions like NAT. For example, you may have Tenant-A behind T1-A router and Tenant-B behind T1-B router, and using gateway firewall feature on T1-A and T1-B you can control the traffic between the 2 tenants.
 
@@ -10,7 +10,7 @@ In this post, I'll describe how you can view the gateway firewall logs on NSX-T 
 
 ![gfw02](https://2cloudyskies.github.io/gfw02.png)
 
-**Step 2** - Identify the active T0 instance on the edge node. For stateful firewalling, the T0/T1 routers need to be deployed in active/standby manner on the edge clusters. 
+**Step 2** - Identify the active T0 instance on the edge node. For stateful firewalling, the T0/T1 routers need to be deployed in active/standby manner on the edge clusters. Initially there is no connection session.
 
 <pre><code>edge01> get firewall interfaces
 Thu Aug 19 2021 UTC 02:41:04.751
@@ -43,7 +43,10 @@ Thu Aug 19 2021 UTC 02:40:01.390
 Connection count: 0</code></pre>
 
 
+**Step 3** - You can see firewall logs using the command below
 
-
+<pre><code>edge01>edge01> get log-file syslog follow
+ 
+2021-08-19T02:37:29.031Z edge01.lab01.one NSX 5055 FIREWALL [nsx@6876 comp="nsx-edge" subcomp="datapathd" s2comp="firewallpkt" level="INFO"] <3 a91a35d4acea4843:8b0fb4b8b5fe50a4> INET reason-match DROP 1001 OUT 84 PROTO 1 172.16.20.10->172.16.5.1</code></pre>
 
 
