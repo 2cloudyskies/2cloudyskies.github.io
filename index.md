@@ -17,4 +17,4 @@ Some notes on using [kubectl proxy](post3-kubectlproxy.md)
 I recently deployed KASM on CentOS behind a Contour reverse proxy. There is a [change](post6kasm.md) to the KASM default zone settings for this to work, otherwise you will not be able to successfully launch applications from KASM workspace
 
 # How to set Jenkins to listen on a different port other than 8080
-This (post)[post7jenkins.md] helps to document how you can set Jenkins to listen to another port other than TCP 8080, and this comes in handy if you have other applications on the sae host using TCP 8080
+This [post](post7jenkins.md) helps to document how you can set Jenkins to listen to another port other than TCP 8080, and this comes in handy if you have other applications on the sae host using TCP 8080
