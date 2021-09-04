@@ -30,7 +30,7 @@ VRF ID              : 2
 Context entity      : aeed5466-05bb-4e11-89c8-a6ec35d1a824
 Context name        : DR-t0-core
  
-Interface           : a91a35d4-acea-4843-8b0f-b4b8b5fe50a4
+Interface           : <span style="color:blue">a91a35d4-acea-4843-8b0f-b4b8b5fe50a4</span>
 Type                : UPLINK
 Sync enabled        : false
 Name                : rp-uplink
