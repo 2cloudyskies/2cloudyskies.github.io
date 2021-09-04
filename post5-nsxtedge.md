@@ -12,6 +12,35 @@ In this post, I'll describe how you can view the gateway firewall logs on NSX-T 
 
 **Step 2** - Identify the active T0 instance on the edge node. For stateful firewalling, the T0/T1 routers need to be deployed in active/standby manner on the edge clusters. 
 
+<pre><code>edge01> get firewall interfaces
+Thu Aug 19 2021 UTC 02:41:04.751
+Interface           : 1c5a085f-6345-4a4c-8992-d22884a5d661
+Type                : BACKPLANE
+Sync enabled        : false
+Name                : bp-sr0-port
+VRF ID              : 3
+Context entity      : 5e3f0756-8a54-4e0e-80f0-43e9f74aef22
+Context name        : SR-t0-core
+ 
+Interface           : eb841818-5337-431d-a136-10a48de639f7
+Type                : LINKED
+Sync enabled        : false
+Name                : t0-core-t1-core-t0_lrp
+VRF ID              : 2
+Context entity      : aeed5466-05bb-4e11-89c8-a6ec35d1a824
+Context name        : DR-t0-core
+ 
+Interface           : a91a35d4-acea-4843-8b0f-b4b8b5fe50a4
+Type                : UPLINK
+Sync enabled        : false
+Name                : rp-uplink
+VRF ID              : 3
+Context entity      : 5e3f0756-8a54-4e0e-80f0-43e9f74aef22
+Context name        : SR-t0-core
+ 
+edge01> get firewall a91a35d4-acea-4843-8b0f-b4b8b5fe50a4 connection
+Thu Aug 19 2021 UTC 02:40:01.390
+Connection count: 0</code></pre>
 
 
 
