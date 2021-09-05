@@ -2,14 +2,14 @@
 
 I recently used containerd instead of Docker for the container runtime in a K8S cluster. I was familiar with the usual "docker ps", "docker logs" commands but was trying to figure out how to do the same with containerd. [crictl](https://github.com/kubernetes-sigs/cri-tools/blob/master/docs/crictl.md) came to the rescue
 
-**Step 1** - Create a /etc/crictl.yaml file as follows
+**Step 1** - Create a /etc/crictl.yaml file as follows on each node where you want to run crictl
 
 <pre><code>runtime-endpoint: unix:///run/containerd/containerd.sock
 image-endpoint: unix:///run/containerd/containerd.sock
 timeout: 10
 debug: false</code></pre>
 
-**Step 2** - Run the commands
+**Step 2** - Run the commands to get the information you need
 
 <pre><code>root@ubuntu2:~# crictl pods
 POD ID              CREATED             STATE               NAME                                       NAMESPACE           ATTEMPT
