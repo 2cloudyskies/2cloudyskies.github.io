@@ -20,4 +20,4 @@ I recently deployed KASM on CentOS behind a Contour reverse proxy. There is a [c
 I recently used containerd instead of Docker for a K8S environment. As Docker commands are not available anymore, this [post](post7crictl.md) explains how to use crictl commands instead.
 
 # Enabling Carbon Black container image scanning
-cbctl is the tool from Carbon Black that can be used to scan container images or K8S manifest files for vulnerabilities or security-related issues. This [post](post8cbct.md) describes how it can be enabled.
+cbctl is the tool from Carbon Black that can be used to scan container images or K8S manifest files for vulnerabilities or security-related issues. This [post](post8cbctl.md) describes how it can be enabled.
