@@ -6,7 +6,7 @@ The official documentation describing how to install and use cbctl is [here](htt
 **Step 1** - Login into CB cloud and create a CLI configuration
 Go to Inventory > Kubernetes > K8S Clusters > CLI config . Give your CLI config a name that you can identify and a built step, for e.g. development
 
-[cbctl1](https://2cloudyskies.github.io/gfw01.png)
+![cbctl1](https://2cloudyskies.github.io/cbct1.png)
 
 
 
