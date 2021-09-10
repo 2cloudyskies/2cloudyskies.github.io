@@ -8,10 +8,17 @@ Go to Inventory > Kubernetes > K8S Clusters > CLI config . Give your CLI config 
 
 ![cbctl1](https://2cloudyskies.github.io/cbct1.png)
 
+**Step 2** - Generate your API key and give it a name
 
+![cbctl2](https://2cloudyskies.github.io/cbct2.png)
 
-**Step 3** - You can see firewall logs using the command below
+![cbctl3](https://2cloudyskies.github.io/cbct3.png)
 
-<pre><code>edge01>edge01> <span style="color:blue">get log-file syslog follow</span>
- 
-2021-08-19T02:37:29.031Z edge01.lab01.one NSX 5055 FIREWALL [nsx@6876 comp="nsx-edge" subcomp="datapathd" s2comp="firewallpkt" level="INFO"] <3 a91a35d4acea4843:8b0fb4b8b5fe50a4> INET reason-match DROP 1001 OUT 84 PROTO 1 172.16.20.10->172.16.5.1</code></pre>
+**Step 3** - Create a ~/.cbctl on the host where cbctl is to be installed and paste the commands into a .cbctl.yaml file . Download the binary from the link given in the final step of installation and move it into your PATH
+
+![cbctl4](https://2cloudyskies.github.io/cbct4.png)
+
+**Step 4** - Test to see if container image scanning works
+
+![cbctl5](https://2cloudyskies.github.io/cbct5.png)
+
