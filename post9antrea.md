@@ -2,7 +2,10 @@
 
 With NSX-T 3.2 release, it is now capable of integrating with Antrea via "Antrea NSX Adaptor". The Antrea NSX Adaptor runs as a pod and helps in communication between NSX Manager and kube-api-server. This allows ClusterNetworkPolicies to be created as DFW policies in NSX which are then applied to the K8S cluster where Antrea is running. 
 
-**Installation and integration steps** - to add
+This post aims to provide some useful commands to view Antrea objects on the K8S cluster
+
+**Installation and integration steps**
+The architecture of Antrea with NSX-T and the installation steps are well documented [here](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-9197EF8A-7998-4D1B-B968-067007C56B5C.html) and hence will not be repeated.
 
 
 
