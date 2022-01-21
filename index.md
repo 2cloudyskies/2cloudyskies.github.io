@@ -23,4 +23,4 @@ I recently used containerd instead of Docker for a K8S environment. As Docker co
 cbctl is the tool from Carbon Black that can be used to scan container images or K8S manifest files for vulnerabilities or security-related issues. This [post](post8cbctl.md) describes how it can be enabled.
 
 # Useful Antrea commands
-[Antrea](https://antrea.io) is an open-source CNI from VMware. This [post](post9antrea.md) describes how Antrea is integrated with NSX-T 3.2 and what are some of the features available.
+[Antrea](https://antrea.io) is an open-source CNI from VMware. This [post](post9antrea.md) describes some of the useful K8S commands to view Antrea objects
